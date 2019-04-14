@@ -13,7 +13,6 @@ class PostsController < ApplicationController
 
   def create 
     post = Post.create(title: params[:title],descriptio: params[:description])
-    post.save
   end 
 end
 
