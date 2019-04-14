@@ -18,3 +18,5 @@ class PostsController < ApplicationController
     post.save
   end 
 end
+
+
