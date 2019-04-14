@@ -77,3 +77,13 @@ Completed 200 OK in 182ms (Views: 170.3ms | ActiveRecord: 0.6ms)
 
 
 Started POST "/posts" for 104.218.140.34 at 2019-04-14 23:47:16 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4PBV3As2C8hUPkjOy+G7KYqRdA247rQYrUHOWmPg6YheZqwjye3tdvmNwSJqqc9RWxPdnK1EUA9062rZzLmqCA==", "title"=>"New Post ", "description"=>"What the heck am I writing \r\n", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "New Post "], ["description", "What the heck am I writing \r\n"], ["created_at", "2019-04-14 23:47:16.895845"], ["updated_at", "2019-04-14 23:47:16.895845"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+No template found for PostsController#create, rendering head :no_content
+Completed 204 No Content in 23ms (ActiveRecord: 3.8ms)
+
+
