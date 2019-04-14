@@ -76,3 +76,4 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 182ms (Views: 170.3ms | ActiveRecord: 0.6ms)
 
 
+Started POST "/posts" for 104.218.140.34 at 2019-04-14 23:47:16 +0000
