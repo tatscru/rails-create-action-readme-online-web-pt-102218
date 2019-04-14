@@ -49,3 +49,8 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 12ms (Views: 5.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/posts/new" for 104.218.140.34 at 2019-04-14 23:46:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.4ms)
